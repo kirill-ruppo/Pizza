@@ -1,0 +1,23 @@
+<style>
+  .admin-panel {
+    height: 500px;
+  }
+
+  .admin-panel form {
+    width: 400px;
+    margin: 40px auto;
+  }
+
+  .admin-panel input {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+</style>
+<div class="admin-panel">
+  <h1 style="color:bisque">Привіт {{username}}</h1>
+  <form action="/admin" method="POST">
+    <textarea name="message" id="" cols="30" rows="3" class="form-control" placeholder="Message"></textarea><br>
+    <button>send</button>
+  </form>
+</div>

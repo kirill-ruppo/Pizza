@@ -1,0 +1,25 @@
+<div class="container" style="background:#101315; padding:30px;">
+    <div class="row">
+        <div class="col-12">
+            <form action="/add-offer" method="POST" ref='uploadForm' encType="multipart/form-data">
+                <div class="form-group">
+                    <input type="file" name="image">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Title</label>
+                    <input type="text" name="title" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Price</label>
+                    <input type="text" name="price" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Title</label>
+                    <textarea class="" name="description" style="display: block; width:100%; min-height:300px"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
